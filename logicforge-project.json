@@ -1,0 +1,353 @@
+{
+  "version": "2.0",
+  "nodes": [
+    {
+      "id": "Nmur0pxsd6w25",
+      "type": "CLOCK",
+      "x": 150,
+      "y": 240,
+      "rot": 0,
+      "inputs": [],
+      "outputs": [
+        0
+      ],
+      "q": 0,
+      "name": "CLOCK",
+      "clock": 0,
+      "freq": 2,
+      "state": 0,
+      "value": 0
+    },
+    {
+      "id": "Nmur0pxse9p9h",
+      "type": "COUNTER",
+      "x": 420,
+      "y": 220,
+      "rot": 0,
+      "inputs": [
+        0
+      ],
+      "outputs": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "q": 0,
+      "name": "4-BIT COUNTER",
+      "clock": 0,
+      "freq": 2,
+      "state": 9,
+      "value": 0,
+      "lastClock": 0
+    },
+    {
+      "id": "Nmur0pxsez9o3",
+      "type": "LED",
+      "x": 690,
+      "y": 100,
+      "rot": 0,
+      "inputs": [
+        0
+      ],
+      "outputs": [],
+      "q": 0,
+      "name": "LED",
+      "clock": 0,
+      "freq": 2,
+      "state": 0,
+      "value": 0
+    },
+    {
+      "id": "Nmur0pxse8btn",
+      "type": "LED",
+      "x": 690,
+      "y": 200,
+      "rot": 0,
+      "inputs": [
+        0
+      ],
+      "outputs": [],
+      "q": 0,
+      "name": "LED",
+      "clock": 0,
+      "freq": 2,
+      "state": 0,
+      "value": 0
+    },
+    {
+      "id": "Nmur0pxsfntad",
+      "type": "LED",
+      "x": 690,
+      "y": 300,
+      "rot": 0,
+      "inputs": [
+        0
+      ],
+      "outputs": [],
+      "q": 0,
+      "name": "LED",
+      "clock": 0,
+      "freq": 2,
+      "state": 0,
+      "value": 0
+    },
+    {
+      "id": "Nmur0pxsfrf4e",
+      "type": "LED",
+      "x": 690,
+      "y": 400,
+      "rot": 0,
+      "inputs": [
+        0
+      ],
+      "outputs": [],
+      "q": 0,
+      "name": "LED",
+      "clock": 0,
+      "freq": 2,
+      "state": 0,
+      "value": 0
+    }
+  ],
+  "wires": [
+    {
+      "id": "Nmur0pxse0tzm",
+      "from": {
+        "id": "Nmur0pxsd6w25",
+        "type": "CLOCK",
+        "x": 150,
+        "y": 240,
+        "rot": 0,
+        "inputs": [],
+        "outputs": [
+          0
+        ],
+        "q": 0,
+        "name": "CLOCK",
+        "clock": 0,
+        "freq": 2,
+        "state": 0,
+        "value": 0
+      },
+      "fromPin": 0,
+      "to": {
+        "id": "Nmur0pxse9p9h",
+        "type": "COUNTER",
+        "x": 420,
+        "y": 220,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "q": 0,
+        "name": "4-BIT COUNTER",
+        "clock": 0,
+        "freq": 2,
+        "state": 9,
+        "value": 0,
+        "lastClock": 0
+      },
+      "toPin": 0,
+      "bus": 1
+    },
+    {
+      "id": "Nmur0pxseupx8",
+      "from": {
+        "id": "Nmur0pxse9p9h",
+        "type": "COUNTER",
+        "x": 420,
+        "y": 220,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "q": 0,
+        "name": "4-BIT COUNTER",
+        "clock": 0,
+        "freq": 2,
+        "state": 9,
+        "value": 0,
+        "lastClock": 0
+      },
+      "fromPin": 0,
+      "to": {
+        "id": "Nmur0pxsez9o3",
+        "type": "LED",
+        "x": 690,
+        "y": 100,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [],
+        "q": 0,
+        "name": "LED",
+        "clock": 0,
+        "freq": 2,
+        "state": 0,
+        "value": 0
+      },
+      "toPin": 0,
+      "bus": 1
+    },
+    {
+      "id": "Nmur0pxsfbmqh",
+      "from": {
+        "id": "Nmur0pxse9p9h",
+        "type": "COUNTER",
+        "x": 420,
+        "y": 220,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "q": 0,
+        "name": "4-BIT COUNTER",
+        "clock": 0,
+        "freq": 2,
+        "state": 9,
+        "value": 0,
+        "lastClock": 0
+      },
+      "fromPin": 1,
+      "to": {
+        "id": "Nmur0pxse8btn",
+        "type": "LED",
+        "x": 690,
+        "y": 200,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [],
+        "q": 0,
+        "name": "LED",
+        "clock": 0,
+        "freq": 2,
+        "state": 0,
+        "value": 0
+      },
+      "toPin": 0,
+      "bus": 1
+    },
+    {
+      "id": "Nmur0pxsfbovi",
+      "from": {
+        "id": "Nmur0pxse9p9h",
+        "type": "COUNTER",
+        "x": 420,
+        "y": 220,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "q": 0,
+        "name": "4-BIT COUNTER",
+        "clock": 0,
+        "freq": 2,
+        "state": 9,
+        "value": 0,
+        "lastClock": 0
+      },
+      "fromPin": 2,
+      "to": {
+        "id": "Nmur0pxsfntad",
+        "type": "LED",
+        "x": 690,
+        "y": 300,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [],
+        "q": 0,
+        "name": "LED",
+        "clock": 0,
+        "freq": 2,
+        "state": 0,
+        "value": 0
+      },
+      "toPin": 0,
+      "bus": 1
+    },
+    {
+      "id": "Nmur0pxsfolyn",
+      "from": {
+        "id": "Nmur0pxse9p9h",
+        "type": "COUNTER",
+        "x": 420,
+        "y": 220,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "q": 0,
+        "name": "4-BIT COUNTER",
+        "clock": 0,
+        "freq": 2,
+        "state": 9,
+        "value": 0,
+        "lastClock": 0
+      },
+      "fromPin": 3,
+      "to": {
+        "id": "Nmur0pxsfrf4e",
+        "type": "LED",
+        "x": 690,
+        "y": 400,
+        "rot": 0,
+        "inputs": [
+          0
+        ],
+        "outputs": [],
+        "q": 0,
+        "name": "LED",
+        "clock": 0,
+        "freq": 2,
+        "state": 0,
+        "value": 0
+      },
+      "toPin": 0,
+      "bus": 1
+    },
+    {
+      "id": "Nmur0qjtfl62b",
+      "from": "Nmur0pxsd6w25",
+      "fromPin": 0,
+      "to": "Nmur0pxse9p9h",
+      "toPin": 0,
+      "bus": 1
+    }
+  ]
+}
